@@ -11,10 +11,7 @@
 <br>
 
 ## Table of contents
-
-<!-- - [Install](#install) -->
 - [Wiki](#wiki)
-<!-- - [API](#api) -->
 - [Status](#status)
 - [Sources](#sources)
 
@@ -24,4 +21,11 @@ The documentations of this project can be found in the Wiki of this project. Eve
 Please, click on [this link](https://github.com/peppequint/web-design-1920/wiki) to read the documentation.
 
 ## Status
+
+- [ ] Concepting
+- [ ] Prototyping
+- [ ] Testing
+- [ ] Iterating
+- [ ] Prototyping
+- [ ] Improving
 
