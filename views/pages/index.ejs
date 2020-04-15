@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./../partials/head') %>
+  </head>
+  <body>
+    <header>
+      <h1>Wat ga je heen?</h1>
+      <label for="to-work">
+        <input class="travel" type="radio" id="to-work" name="travel" onclick="showRouteWork()" />
+        Van huis naar werk
+      </label>
+      <label for="to-home">
+        <input class="travel" type="radio" id="to-home" name="travel" onclick="showRouteHome()" />
+        Van werk naar huis
+      </label>
+    </header>
+    <main>
+      <section class="phase__one">
+        <header>
+          <h1>Route</h1>
+        </header>
+        <label for="from">
+          Van
+          <!-- javascript gebruiken om default plek toe te voegen -->
+          <input id="from" type="text" />
+        </label>
+        <label for="to">
+          Naar
+          <input id="to" type="text" />
+        </label>
+        <button class="phase__one-btn">Dit klopt!</button>
+      </section>
+      <section class="phase__two">
+        <header>
+          <h1>Tijd</h1>
+        </header>
+        <label for="departure">
+          Vertrektijd
+          <!-- javascript gebruiken om huidige tijd toe te passen -->
+          <input id="departure" type="time" min="09:00" max="18:00" />
+        </label>
+        <button class="phase__two-btn">
+          Dit klopt!
+        </button>
+      </section>
+      <section class="phase__three">
+        <header>
+          <h1>Datum</h1>
+        </header>
+        <label for="day-number">
+          Dag
+          <input id="day-number" type="number" />
+        </label>
+        <label for="month">
+          <select id="month">
+            <option value="Januari">Januari</option>
+            <option value="Februari">Februari</option>
+            <option value="Maart">Maart</option>
+            <option value="April">April</option>
+            <option value="Mei">Mei</option>
+            <option value="Juni">Juni</option>
+            <option value="Juli">Juli</option>
+            <option value="Augustus">Augustus</option>
+            <option value="September">September</option>
+            <option value="Oktober">Oktober</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+        </label>
+        <button class="phase__three-btn">Dit klopt!</button>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
