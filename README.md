@@ -6,7 +6,7 @@
 	<br>
 	Exclusive application for Marijn!
 	<br>
-	<!-- <a href="https://progressive-web-apps-1920.herokuapp.com/">Live demo</a> -->
+	<a href="https://tranquil-chamber-59516.herokuapp.com/">Live demo</a>
 </p>
 <br>
 
