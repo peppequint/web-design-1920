@@ -16,6 +16,9 @@ const phaseTwo = document.querySelector('.phase__two');
 const phaseTwoBtn = document.querySelector('.phase__two-btn');
 
 const phaseThree = document.querySelector('.phase__three');
+const phaseThreeBtn = document.querySelector('.phase__three-btn');
+
+const phaseFour = document.querySelector('.phase__four');
 
 const from = document.getElementById('from');
 const to = document.getElementById('to');
@@ -86,3 +89,7 @@ function setMonth() {
 
   month.selectedIndex = m;
 }
+
+phaseThreeBtn.addEventListener('click', () => {
+  phaseFour.style.display = 'block';
+});
