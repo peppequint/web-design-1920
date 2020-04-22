@@ -15,4 +15,16 @@ app.get('/', (req, res) => {
   res.render('pages/index');
 });
 
+app.get('/naar-huis', (req, res) => {
+  res.render('pages/home');
+});
+
+app.get('/naar-werk', (req, res) => {
+  res.render('pages/work');
+});
+
+app.get('/rit', (req, res) => {
+  res.render('pages/ride');
+});
+
 app.listen(port, () => console.log(`Web Design running on port ${port}`));
