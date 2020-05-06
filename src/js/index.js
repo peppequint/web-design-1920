@@ -1,95 +1,22 @@
 console.log('index.js');
 
-// document.addEventListener('keypress', (e) => {
-//   if (e.keyCode == 9) {
-//     e.keyCode == 32;
-//   }
-// });
+const sectionButtonOne = document.getElementById('section__button-one');
+const sectionButtonTwo = document.getElementById('section__button-two');
+const changeButton = document.getElementById('color__changer');
 
-let travelToWork = document.getElementById('to-work');
-let travelToHome = document.getElementById('to-home');
+const setColor = () => {
+  const randomColorOne = Math.floor(Math.random() * 16777215).toString(16);
+  const randomColorTwo = Math.floor(Math.random() * 16777215).toString(16);
+  const randomColorThree = Math.floor(Math.random() * 16777215).toString(16);
+  const randomColorFour = Math.floor(Math.random() * 16777215).toString(16);
 
-const phaseOne = document.querySelector('.phase__one');
-const phaseOneBtn = document.querySelector('.phase__one-btn');
+  console.log(randomColorOne);
 
-const phaseTwo = document.querySelector('.phase__two');
-const phaseTwoBtn = document.querySelector('.phase__two-btn');
+  sectionButtonOne.style.boxShadow = `inset 0 0 50px #${randomColorOne}, inset 20px 0 80px #${randomColorTwo}, inset -20px 0 80px #${randomColorThree}, inset 20px 0 300px #${randomColorFour}, inset -20px 0 300px #0ff,
+  0 0 50px rgb(252, 202, 202), -10px 0 80px #f0f, 10px 0 80px #0ff`;
 
-const phaseThree = document.querySelector('.phase__three');
-const phaseThreeBtn = document.querySelector('.phase__three-btn');
+  sectionButtonTwo.style.boxShadow = `inset 0 0 50px #${randomColorOne}, inset 20px 0 80px #${randomColorTwo}, inset -20px 0 80px #${randomColorThree}, inset 20px 0 300px #${randomColorFour}, inset -20px 0 300px #0ff,
+  0 0 50px rgb(252, 202, 202), -10px 0 80px #f0f, 10px 0 80px #0ff`;
+};
 
-const phaseFour = document.querySelector('.phase__four');
-
-const from = document.getElementById('from');
-const to = document.getElementById('to');
-
-const time = document.getElementById('departure');
-
-const day = document.getElementById('day-number');
-
-const month = document.getElementById('month');
-
-function showRouteWork() {
-  if (travelToWork.checked) {
-    phaseOne.style.display = 'block';
-
-    from.defaultValue = 'Eindhoven';
-    to.defaultValue = 'Amsterdam';
-  }
-}
-
-function showRouteHome() {
-  if (travelToHome.checked) {
-    phaseOne.style.display = 'block';
-
-    from.defaultValue = 'Amsterdam';
-    to.defaultValue = 'Eindhoven';
-  }
-}
-
-phaseOneBtn.addEventListener('click', () => {
-  phaseTwo.style.display = 'block';
-  setTime();
-});
-
-function setTime() {
-  const d = new Date();
-  let h = d.getHours();
-  let m = d.getMinutes();
-
-  if (h < 10) {
-    h = '0' + h;
-  }
-
-  if (m < 10) {
-    m = '0' + m;
-  }
-
-  currentTime = h + ':' + m;
-
-  time.value = currentTime;
-}
-
-phaseTwoBtn.addEventListener('click', () => {
-  phaseThree.style.display = 'block';
-  setDay();
-  setMonth();
-});
-
-function setDay() {
-  const date = new Date();
-  const d = date.getDate();
-
-  day.value = d;
-}
-
-function setMonth() {
-  const date = new Date();
-  const m = date.getMonth();
-
-  month.selectedIndex = m;
-}
-
-phaseThreeBtn.addEventListener('click', () => {
-  phaseFour.style.display = 'block';
-});
+changeButton.addEventListener('click', setColor);

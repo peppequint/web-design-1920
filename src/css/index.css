@@ -159,3 +159,15 @@ footer {
   box-shadow: inset 0 0 50px #fff, inset 20px 0 80px rgb(250, 0, 0), inset -20px 0 80px rgba(225, 0, 255, 0.39), inset 20px 0 300px rgb(47, 0, 255), inset -20px 0 300px rgba(0, 255, 255, 0.445),
     0 0 50px rgb(252, 202, 202), -10px 0 80px rgba(255, 0, 255, 0.411), 10px 0 80px rgba(0, 255, 255, 0.425);
 }
+
+#color__changer {
+  border: 3px solid #c2281d;
+  background: none;
+    color: red;
+    /* width: 150px; */
+    padding: 2rem;
+    box-shadow: inset 0 0 50px #fff, inset 20px 0 80px rgb(250, 0, 0), inset -20px 0 80px rgba(225, 0, 255, 0.39), inset 20px 0 300px rgb(47, 0, 255), inset -20px 0 300px rgba(0, 255, 255, 0.445), 0 0 50px rgb(252, 202, 202), -10px 0 80px rgba(255, 0, 255, 0.411), 10px 0 80px rgba(0, 255, 255, 0.425);
+    color: white;
+    font-size: 1rem;
+    font-family: 'Metal Mania', cursive;
+}
